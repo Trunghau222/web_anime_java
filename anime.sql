@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th1 10, 2022 lúc 12:57 PM
+-- Thời gian đã tạo: Th1 15, 2022 lúc 03:58 AM
 -- Phiên bản máy phục vụ: 10.4.22-MariaDB
 -- Phiên bản PHP: 7.4.27
 
@@ -118,7 +118,9 @@ CREATE TABLE `users` (
   `url_hinhanh` varchar(100) NOT NULL DEFAULT 'not_avatar.png',
   `phone` varchar(11) NOT NULL DEFAULT '',
   `quyen` int(11) NOT NULL DEFAULT 0,
-  `ban` int(11) NOT NULL DEFAULT 0
+  `ban` int(11) NOT NULL DEFAULT 0,
+  `diachi` text NOT NULL DEFAULT 'Chưa cập nhật',
+  `status` int(11) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
